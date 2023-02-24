@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>好人与卡：交手 | janblank499</title>
+        <meta name="author" content="janblank499">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <link rel="icon" href="https://raw.githubusercontent.com/janblank499/images/main/0297d8d65d37f51c00aa8d0ea13c138dcb6fd1e8.jpg%40150w_150h.jpg">
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        
+        
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height: 100vh; width: 100vw; left: 0; top: 0; position: fixed; display: flex; z-index: 2147483647; justify-content: space-between; background: #fff; transition: opacity 0.3s ease-out, visibility 0.3s; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none">
+    <div style="position: fixed; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center">
+        <div id="loadcontent" style="width: 50vmin; height: 50vmin; padding: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: solid 10px #a3ddfb; text-align: center">
+            <div>
+                <h2>LOADING...</h2>
+                <p style="word-break: keep-all">加载过慢请开启缓存（浏览器默认开启）</p>
+                <img alt="loading" src="/images/loading.gif" style="height: 50px">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="layout">
+            <transition name="into">
+            <div id="main" v-show="showpage" style="display: -not-none">
+                <nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">JANBLANK499</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div :class="&quot;phone-menu &quot; + menushow" id="phone-menu">
+        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
+        <div class="title" @click="menushow = !menushow">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;JANBLANK499</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menushow">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+
+                <div class="article">
+    <div>
+        <h1>好人与卡：交手 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2022/8/1
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E5%B0%8F%E8%AF%B4/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                小说
+            </a>
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <p>2023-1-24 更新：这个坑弃掉了呢</p>
+<span id="more"></span>
+<p>夏曦从未感到自己的思维是如此敏锐，他几乎下意识的召唤出那张船票，只要自己离开这个游戏，一切都与自己无关了。然而手被张佳紧紧握住的压痛感让他停了下来。不灭之火的攻击从来是假刀藏真刀，他们会真的杀死这一屋子低等级玩家，自己脱离了游戏后也可能遭到毒手。<br>夏曦左手一转把张晶护在了身后，右手拿出手机屏幕上出现了红色警告：<em><strong>您现在正处在特殊结界中，暂不能联系外界</strong></em>。只能滑到了卡牌界面。一边靠近门口转角的黑暗处，现在有242张二星卡,450万好人币，对方则是百人四星团，每升一阶战力提升8倍左右，正面对上毫无胜算，那么只剩下一个选择了：三十六计走为上。手指一滑，账面上的好人币几近清零，与之相对的一张四星刺客冲向门口。<br>“哦，可不能太着急送死啊，我还想好好玩玩呢。”当血花在离门最近的特种牌身上绽放时，枪鸣声才伴着轻蔑的语气传进夏曦的耳中。夏曦发现台上的百人四星团全饶有笑意的看着自己，现在他们的目标都是自己了，在自己失败前，其他玩家应该不会受到攻击。很明显他们都以折磨对手为乐，这代表着不会百人一起发起进攻。也就是说还有机会，夏曦心里暗喜，开始操作手机。“怎么，是不是感觉卡牌不受使唤了，连收回牌都做不到？”当对方看见夏曦略显急躁的操作手机欲擒故纵的问道，“告诉你吧这是我的特殊技能，可以控制低星卡，麻痹高星卡，那么准备好受死了吗？”对方狂妄的声音刚落，只见夏曦连同所有召唤出来的卡牌消失在了原地。<br>真是个笨蛋，仅仅打到个分身就把自己自己的技能说出去了，躲在人群中的夏曦吐槽道，现在我手上共有5张四星牌，特种（影分身）近卫（不可视之剑）重装（光学迷彩）医疗（紧急除颤）术士（天籁之音）一开始冲出去的特种只是影分身罢了，当枪响所有人都注视在倒地的刺客身上时的时候，再使用天籁之音迷惑对手，期间我和卡牌换装再由特种带入人群中。那个转角的人影只是光学迷彩的投影罢了。<br>台上的人明显焦躁了起来，只有那个领头仍然坐在栏杆上晃着退。“配合不协调？是第一次协同作战吗？还只是巧合？”有一瞬间，夏曦感觉到一股强烈的目光在看着自己，但预想中的攻击并没有出现。“TMD，不灭之火不会想拿我们练手吧，黑，真他妈的黑”夏曦在人群中暗骂。“我知道你逃不出去的，如果你不出来，每隔3秒我就杀一个其他玩家。”之前开枪的暴躁老哥选择了最简单粗暴的方法。<br>张佳顺着我分享给她的定位来到我身边给我看了一眼她的手机，已经多出来了一个群，看样子我让张佳在混乱中干的事已经差不多了，群里差不多是这里的所有玩家了。张佳依据我的指示已经在群里解释了一些事情，为了哥哥张佳也成长了不少啊。群里玩家大多数都在痛骂不灭之火毫无人道，也有几个想把我供出去来的人。还好我没加群而是让张佳代行。<br>此时那个枪手已经数到2，正常来说真枪不能穿透卡牌，反之假枪不能对真人产生伤害，这里的平民玩家至少也有一张卡牌用来挡刀，所以理论上做不到一枪毙命。当然我现在不可能让他们受伤，因为我要凝聚人心啊！“叮”子弹击中前的瞬间，我的刺客一闪而过将子弹一劈为二。既然都是四星卡牌，那么就是操作技术的比较，现在来看我略胜一筹。再看张佳已经在群里帮我造势了，至少现在没有人公开说要把我供出去了，毕竟不灭之火可是杀人魔啊。松懈之时，一道闪电几乎毫无预兆的劈下来。</p>
+
+    </div>
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 janblank499
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;janblank499
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+            </div>
+            </transition>
+            <div id="showimg">
+                <img id="showimg-content">
+            </div>
+        </div>
+        <script src="/js/functions.js"></script>
+<script src="/js/particlex.js"></script>
+
+
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="janblank499/janblank499.github.io"
+    data-repo-id="R_kgDOHtGT4g"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHtGT4s4CT3oI"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
+
+
+    </body>
+</html>
