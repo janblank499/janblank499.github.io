@@ -3,7 +3,7 @@
 <html lang="zh_cn">
     <head>
         <meta charset="UTF-8">
-        <title>Tags: Node.js | janblank499</title>
+        <title>Hexo-Blog-搭建教程-Ⅱ | janblank499</title>
         <meta name="author" content="janblank499">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -128,147 +128,87 @@
     </div>
 </nav>
 
-                <div id="archives">
-    
-    <div class="categories-tags">
+                <div class="article">
+    <div>
+        <h1>Hexo-Blog-搭建教程-Ⅱ </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/3/11
+        </span>
         
-        
-        <span>
-            <a href="/tags/Hexo/" style="background: #00a596">
+        <span class="category">
+            <a href="/categories/%E6%95%99%E7%A8%8B/">
                 <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                Hexo
+                教程
             </a>
         </span>
         
         
-        
-        <span>
-            <a href="/tags/Git/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                Git
-            </a>
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Hexo/" style="color: #00bcd4">Hexo</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Git/" style="color: #ffa2c4">Git</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Node-js/" style="color: #00bcd4">Node.js</a>
+            </span>
+            
         </span>
-        
-        
-        
-        <span>
-            <a href="/tags/Node-js/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                Node.js
-            </a>
-        </span>
-        
-        
-        
-        
-        
-        <span>
-            <a href="/tags/PC/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                PC
-            </a>
-        </span>
-        
         
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2023/3/11</div>
-            <a href="/2023/03/11/Hexo-Blog-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B-%E2%85%A1/">
-                <h3>Hexo-Blog-搭建教程-Ⅱ</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E6%95%99%E7%A8%8B/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        教程
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Hexo/" style="color: #ff7d73">Hexo</a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Git/" style="color: #00a596">Git</a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Node-js/" style="color: #00bcd4">Node.js</a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <p>这篇是写如何在本地生成 Blog 并部署到 Github 上和相关命令的部分，以后可能还要不断补充吧。<del>大概率会鸽呢</del><br>实在不想写了，重复造轮子没意思。可以看<a target="_blank" rel="noopener" href="https://argvchs.netlify.app/2022/04/17/hexo-blog-2/">ARGVCHS 的 Hexo 博客搭建教程 II</a>，这里就补充一点</p>
+<span id="more"></span>
+
+<h1 id="0-初始化-Hexo"><a href="#0-初始化-Hexo" class="headerlink" title="0.初始化 Hexo"></a>0.初始化 Hexo</h1><p>在 Blog 文件夹的 Git Bash 中依次输入以下命令</p>
+<pre><code class="bash">hexo init #初始化 Hexo 框架
+hexo g #在本地生成静态文件
+hexo s #在本地运行静态文件
+</code></pre>
+<p>等到控制台输出如下内容  </p>
+<pre><code class="bash">INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
+</code></pre>
+<p>打开 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可在浏览器打开 Blog</p>
+<h1 id="1-Hexo-文件结构"><a href="#1-Hexo-文件结构" class="headerlink" title="1.Hexo 文件结构"></a>1.Hexo 文件结构</h1><p>hexo&#x2F;<br>|– node_modules&#x2F; 用来存放 NPM 包，无需注意<br>|– public&#x2F; 本地生成的准备发布的静态文件<br>|– scaffolds&#x2F; 存储文章模板，hexo new 时会用到<br>|– source&#x2F; 存储文章和部分资源<br>|– themes&#x2F; 存储主题<br>|– _config.xxx.yml 主题的配置文件（xxx改为主题名）<br>|– _config.yml 是 Hexo 的配置文件<br>|– db.json<br>|– package.json NPM 的包 json，无需注意<br>|– package-lock.json  </p>
+<h1 id="2-安装主题"><a href="#2-安装主题" class="headerlink" title="2.安装主题"></a>2.安装主题</h1><p>首先在 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo thems</a>挑选一个心仪的主题，选好主题后就要安装，在博客根目录下运行下面的命令将主题 Clone 到本地</p>
+<pre><code class="bash">git clone &lt;theme-link&gt;.git &lt;theme-name&gt; --depth=1 # &lt;theme-link&gt; 为主题链接，&lt;theme-name&gt; 为主题名称
+</code></pre>
+<p>比如我的主题是 ParticleX，就是 <code>git clone https://github.com/argvchs/hexo-theme-particlex.git particlex --depth=1</code><br>安装完成后，在博客根目录下的 _config.yml 中设置 theme 参数为你的主题名称，就可以切换主题，一般主题在 GitHub 项目页下都会有介绍和配置说明，可以按照说明自定义页面</p>
+<h1 id="3-创建关于页和文章分类"><a href="#3-创建关于页和文章分类" class="headerlink" title="3.创建关于页和文章分类"></a>3.创建关于页和文章分类</h1><h2 id="Categories-x2F-Tags-文章分类"><a href="#Categories-x2F-Tags-文章分类" class="headerlink" title="Categories&#x2F;Tags 文章分类"></a>Categories&#x2F;Tags 文章分类</h2><p>输入 <code>hexo new page categories</code> 创建 Categories 页面<br>打开 source&#x2F;categories 下的 index.md 文件，在文章前添加 type: categories  </p>
+<p>输入命令 hexo new page tags 创建 Tags 页面<br>打开 source&#x2F;tags 下的 index.md 文件，在文章前添加 type: tags</p>
+<p>如果想让标题大写的话可以将 title 参数改为大写，即 title: Categories，但是一些主题是根据标题检测的，可能检测不到</p>
+<h2 id="About-关于页"><a href="#About-关于页" class="headerlink" title="About 关于页"></a>About 关于页</h2><p>先按照创建文章分类的方法，创建 About 页面，然后在下面添加内容即可</p>
+<h1 id="4-Hexo-常用命令"><a href="#4-Hexo-常用命令" class="headerlink" title="4.Hexo 常用命令"></a>4.Hexo 常用命令</h1><p>生成静态文件：<code>hexo g</code><br>清空静态文件：<code>hexo cl</code><br>在本地运行：<code>hexo s</code><br>部署到网站：<code>hexo d</code><br>生成静态文件并部署到网站：<code>hexo d -g</code> 或 <code>hexo g -d</code><br>创建新文章：<code>hexo new [layout] &lt;file&gt;</code><br>P.S. laiout 指定文章布局，当设置为 draft 时，文章会保存在 source&#x2F;_drafts 文件夹下，作为草稿存在，不会被发布。使用<code>hexo publish</code>可以发布<br>P.S. 创建新文章命令中的 <file> 是文件名，标题在文章中的 title 参数中修改</p>
+
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2023/1/29</div>
-            <a href="/2023/01/29/Hexo-Blog-%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B-%E2%85%A0/">
-                <h3>Hexo Blog 搭建教程 Ⅰ</h3>
-            </a>
-            <div class="info">
-                
-                <span class="category">
-                    <a href="/categories/%E6%95%99%E7%A8%8B/">
-                        <span class="icon">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </span>
-                        教程
-                    </a>
-                </span>
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Hexo/" style="color: #00bcd4">Hexo</a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Git/" style="color: #ff7d73">Git</a>
-                    </span>
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/Node-js/" style="color: #00a596">Node.js</a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
     </div>
+    
+    
     
 </div>
 
@@ -296,6 +236,28 @@
         </div>
         <script src="/js/functions.js"></script>
 <script src="/js/particlex.js"></script>
+
+
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="janblank499/janblank499.github.io"
+    data-repo-id="R_kgDOHtGT4g"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHtGT4s4CT3oI"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
 
 
     </body>
