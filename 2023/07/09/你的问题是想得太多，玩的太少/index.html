@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>你的问题是想得太多，玩的太少 | janblank499</title>
+        <meta name="author" content="janblank499">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <link rel="icon" href="https://raw.githubusercontent.com/janblank499/images/main/0297d8d65d37f51c00aa8d0ea13c138dcb6fd1e8.jpg%40150w_150h.jpg">
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        
+        
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height: 100vh; width: 100vw; left: 0; top: 0; position: fixed; display: flex; z-index: 2147483647; justify-content: space-between; background: #fff; transition: opacity 0.3s ease-out, visibility 0.3s; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none">
+    <div style="position: fixed; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center">
+        <div id="loadcontent" style="width: 50vmin; height: 50vmin; padding: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: solid 10px #a3ddfb; text-align: center">
+            <div>
+                <h2>LOADING...</h2>
+                <p style="word-break: keep-all">加载过慢请开启缓存（浏览器默认开启）</p>
+                <img alt="loading" src="/images/loading.gif" style="height: 50px">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="layout">
+            <transition name="into">
+            <div id="main" v-show="showpage" style="display: -not-none">
+                <nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">JANBLANK499</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div :class="&quot;phone-menu &quot; + menushow" id="phone-menu">
+        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
+        <div class="title" @click="menushow = !menushow">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;JANBLANK499</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menushow">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+
+                <div class="article">
+    <div>
+        <h1>你的问题是想得太多，玩的太少 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/7/9
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E6%B8%B8%E6%88%8F/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                游戏
+            </a>
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <p>在我玩完女神异闻录5后，我在自己的Blog写了一篇<a href="#">Post not found: ［女神异闻录5 R］一些整理</a>。我以为我和这个游戏的缘分就此结束了，但显然 P5R 被称为电子伟哥并非空穴来风，就像所有人说的那样戒断反应（电子阳痿）出现了。正巧我决定不再每个月续费 XGP，于是在到期之前我尝试了 XGP 中很多不同类型的游戏，但我始终忘不了 P5R，终于在风雨交加的一个深夜，种种疑问让我辗转反侧。</p>
+<span id="more"></span>
+
+<ul>
+<li>当我们说“P5R 天下第一的时候”，我们究竟说的是什么？</li>
+<li>“P5R是 jrpg 的集大成之作”，jrpg又是什么？</li>
+<li>回顾rpg（角色扮演）crpg（电子角色扮演）这些 tag 时，对应的游戏似乎没有车枪球来得一目了然？</li>
+<li>凡此种种，汇成一句是什么让我们玩一个游戏&#x2F;喜欢一个游戏&#x2F;厌恶一个游戏？</li>
+</ul>
+<hr>
+<p>P5R 给我的感觉和 Minecraft &amp; Factorio 很相似，这并不是说任何游戏上的相似，而是我本人的一种感觉，当你第二天走在路上突然喊一句 persona，当你在睡觉前脑子里浮现的也是“<em>你很累了，赶紧睡吧</em>”摩尔加纳音，当你放松下来，你的脑海里自然而然浮现出P5r。这种体验我只有 MC &amp; Factoio 以及肉山前的 Terraria 体会过。<br>在这些游戏中 P5R 是如此的特殊，当我试图分解它的要素时，画面、美术、音乐、剧情、养成、关卡、回合制战斗。即便是最劝退的回合制阿特拉斯都做到了尽可能让大家接受，其他要素更可谓是神：</p>
+<ul>
+<li>美术风格极具个性，金子一马诡异阴暗的恶魔设计和副岛成记带有的鲜明时髦的气质融为一体，红色的使用出神入化，UI 更是被每一个玩家称道；</li>
+<li>剧情行云流水，人物塑造个性鲜明，配合设计精美的演出最终的效果一流；</li>
+<li>音乐在完美契合游戏同时更是独立的吸引了大量粉丝；</li>
+<li>迷宫和解密设计以及对东京的准确复刻更是箱庭地图理念的完美诠释 ，一座迷宫一个主题一种设计一种全新的体验。</li>
+<li>两套截然不同的养成系统互为补充，与游戏流程和剧情紧密结合。</li>
+</ul>
+<p>这些要素结合的是如此紧密，如此环环相扣。<br>于是我发现我难以找到特征来说明“P5R 为什么是天下第一”，因为它是 P5R，因为它为我们玩家营造了一个世界，一个我们成为主人公的世界。我甚至不能用代入感一词（事实上我们也无法很难代入 Joker），当你开始游戏，就是在开始一段生活。如果一定要概括的话，我会用反抗和沉浸两词，反抗是底色，沉浸是体验。<br>事实上如果我们去看 2017 年的 <strong>TGA</strong> 我们也会发现 P5R 有<strong>最佳角色扮演 &#x2F; 艺术指导 &#x2F; 音乐</strong>的提名，最终获奖“<strong>最佳角色扮演</strong>”。阿特拉斯从真女神转生系列和女神异闻录系列的积累汇聚成了 P5R，是阿特拉斯的集大成之作，是 jrpg 的集大成之作，<strong>是沉浸感的极致体验</strong>。<br><del>当我完成初稿通读整篇文章的时候，我意识到似乎每一个介绍 P5R 的人都绕不开一个词“沉浸感”。在我熟知的游戏中另一个以沉浸感著称的游戏是 荒野大镖客2，但显然这两个游戏区别很大。大镖客的开放世界可谓是极致打磨，为了追求沉浸感甚至抛弃了部分的游戏性，好处也显而易见我们的确有很多瞬间置身于那个西部世界，而我要做一个牛仔。P5R 则是让人相信这一切就发生在现实中的东京。很多时候我知道在玩游戏，但我就想在 P5R 中过现实生活（或是理想中的现实生活）</del></p>
+<hr>
+<p>那么 jrpg 又是什么呢？这与第三个问题一脉相承，对于这两个问题我推荐 B 站 LunaticMosfet 的:<br><a target="_blank" rel="noopener" href="https://b23.tv/ecwfy7a">【旧世代电台21】JRPG是不是蔑称？聊聊JRPG的词义变迁 | 类型的固有印象是如何形成的？</a><br><a target="_blank" rel="noopener" href="https://b23.tv/ONChNkW">【旧世代电台16】如何定义RPG游戏 | RPG的核心游戏体验应该是什么</a><br>有意思的是这两个问题我提出的契机大不相同，一个是在玩 P5R 的工程中，一个则是在玩 我的世界：地下城 和 死亡细胞 的时候（这个游戏后面再详细说说）</p>
+<p><em><strong>以下内容含有大量个人主观理解，如有建议和意见，欢迎交流</strong></em></p>
+<p>相比官方的译名“日式 rpg”，我更喜欢叫它“日本 rpg”（即日本制作人主导制作的 rpg）。我认为这更接近最开始时 jrpg 的定义，在亚洲金融危机之前，日本游戏制作人常常以天才般的设想颠覆游戏行业，他们领先时代太多以至于很难精确归入当时的游戏分类中，人们于是褒称为 jrpg。当然现在来看在这种情况下从经典的勇者斗恶龙、ff 系列到塞尔达乃至宫崎英高的魂系都算是 jrpg，于是 jrpg 的游戏类型太多了，人们逐渐把一些创新的优秀的游戏单独出来变成了 <em>魂like</em> 等等，风格不断固化相比与 crpg 新增了如下 tag：</p>
+<ul>
+<li>回合制</li>
+<li>长流程</li>
+<li>重视剧情</li>
+<li>相对不写实的画面</li>
+<li>有个性的美术风格</li>
+<li>沉浸感的特殊追求</li>
+<li>主人公的形象更加鲜明，游玩时扮演感强</li>
+</ul>
+<p>看到以上几点，我们会有种熟悉感，是的，P5R 和这些特征十分的吻合，这么看 P5R 无愧于 jrpg 集大成作的名号。<br><em><strong>如果你是这么认为的，那很可能大错特错了</strong></em>，如果这么看甚至连 FF 16 都要开除 jrpg 籍了 <del>事实上已经开除 FF 16 了</del><br>与其说 P5R 完美符合 jrpg 的特征，不如说现在新一代游戏人对 jrpg 的理解受 P5R 的影响很大，<strong>我们理解的 jrpg 特征就是 P5R 引申出的。</strong><br>回到最初的问题，jrpg 到底是什么呢？如果你像我一样不愿意承认上面的 tag 能概况所有 jrpg 游戏，那么相信你已经有自己的理解。<br><del>（如果没有，那就是想的太多，玩的太少）原谅我实在不知道如何说出 jrpg 的精髓，或许 jrpg 的独特之处就在于它从未被真正定义。或者说 jrpg 压根就不是一种游戏类型</del></p>
+<p>那么 RPG 呢？好像我们对他的认知也非常模糊。一如既往先看中文：角色扮演，又是一个很模糊的词语，我们在现实生活中也有很多角色：孩子、学生、工人、父母等等，我们的生活也是很多个角色扮演叠加而成的吗？<br>是也不是，这些当然可以算是角色扮演，但这些并不是游戏。RPG 一词来源于桌游，这种游戏最显著的特征就是除了一般意义上的玩家还会有一位上帝深度参与游戏。现在的剧本杀和狼人杀就是其衍生。游戏中的要素是由话语组成，注重的是角色及其能力，整个游戏由角色驱动的。与之相对的 CRPG 中更多的是由数值驱动。<br>例如你想打猎，在传统 rpg 中你是猎人自然可以打猎，甚至不是猎人也没有关系，只要能让其他玩家和上帝觉得你可以打猎也可以。在游戏中玩家既是规则的制定者也是执行者才有的灵活性。<br>在 crpg 中，<strong>上帝不再由玩家扮演，而是不具有知性的电脑</strong>，这是游戏更多由数值驱动（因为电脑只能理解数值），打猎需要满足设定的要求，在这过程中可能还要你寻找瞄准击杀猎物。好像更具有沉浸感，但你游戏的乐趣已经不单是纯粹的扮演了。<br>现实中和网络中的传统 PRG 还是很清晰的，因为<strong>游戏类型和游戏玩法达到了统一</strong>。<br>但 CRPG 就要更加复杂和模糊一点，因为游戏中会其他的玩法和操作吸引你大量的注意力。而比较纯粹的角色扮演似乎游戏性又不足，经典的例子就是 Stray。</p>
+<hr>
+<p>在讨论最后一个问题之前我想要先谈谈另一款游戏：<strong>我的世界：地下城</strong> ,也算是我对这个游戏的一点评测。上面我说这款游戏引发了我对 rpg 的思考。当我进行游玩的时候，我似乎不能在 arpg 认知上更深一层，当我在 B站 上搜索的时候，我找到了一个词 <em>“暗黑 like”</em>，至此游戏类型和游戏玩法的区别逐渐明显,游戏类型是 arpg，玩法则类似暗黑破坏神。人们概括 <em>暗黑 like</em> 为刷子游戏，显然这类游戏的玩法就是打副本、刷装备、变强，再下副本、刷装备、变强的循环。看上去非常的无聊对不对，这就是最初的 arpg 的样式.<br>同时，我脑海中对这款游戏的定位也清晰了：年轻人的第一款<del>暗黑破坏神</del> arpg。这并不是一个多好的评价，甚至说作为一个零零后玩过的第一款 arpg 是 4399 上的造梦西游。地下城的问题甚至超过了双手之数：</p>
+<ul>
+<li>引导极其匮乏，只能说是 MC 的原汁原味了。</li>
+<li>毫无故事情节，一句话：你要打败伤害村民的教主。</li>
+<li>键鼠操作有种日厂的美，移动、近战、远程都依靠鼠标的两个键，键盘控制的翻滚和鼠标控制的方向组合在一起极其违反直觉，一个翻滚冲进 BOSS 怀里经常发生。</li>
+<li>怪物种类少，包括各个变种和换皮怪物总数仅有二十钟左右，这其中还有七八种精英怪和 BOSS 在关卡里很少出现。</li>
+<li>地图设计一般，过于的线性。这类游戏不可避免的会重复刷图，但仅仅三四遍就对一张地图感到十分厌倦就是地图设计的问题了，较长的单关时间更是加剧了这个问题。其次很多时候不同地图就是换个主题，抑或是只在 BOSS 房出现新机制，重复感很强。</li>
+<li>养成曲线不平滑，游戏中并没有职业系统，也没有复杂的人物加点系统，人物的成长全在于装备的升级和附魔。装备升级是每有三次过关升一次，附魔点数又和人物等级挂钩亦或者拆解已附魔装备获得。对成长的种种限制，导致了中期刷关体验更下一层楼，很多时候刷一关毫无提升。</li>
+<li>优化一般，无法理解一个俯仰视角马赛克游戏为什么会对显卡要求如此之高。</li>
+</ul>
+<p>这么看这款游戏似乎一无是处，如果他不是<strong>我的世界</strong>的 ip 作的话可能确实如此。作为 MC 的 ip 作，游戏的美术风格统一且优秀，怪物和附魔也是 MC 的原汁原味，地图设计也融合了一部分 MC 的机制（虽然用处不大）。<br>养成简单，只有装备系统，在缺乏引导的情况下上手也极快。前期快速的升级和获得装备，配合优秀的打击感和干净利落的画面，神挡杀神，佛挡杀佛，能沉浸疯狂刷怪的快乐中。如果此时你还能找到好友一起，游戏的乐趣会更上一层楼。<br>这款游戏真正无趣是从中期开始的，因为它前期已经把所有的魅力展现给你了。如果你对这类 <em>暗黑 like</em> 产生了兴趣，那么寻找一款更加复杂的更加全面的 <em>暗黑 like</em> 可能会比继续游玩来的爽快的多，至此它已经完成了它的任务。</p>
+<p>好像离我们想要讨论的问题有点远了，<strong>我的世界：地下城</strong>是一个很好的例子。既不过分单调，也不过分复杂，我认为它显现出了所有游戏共同部分：<strong>反馈感</strong>，无论是不断的挑战 BOSS 直至胜利还是步行模拟器看一段剧情，都算一种反馈。地下城初期的反馈感是很好的，但到了中后期反馈感就比较落了。<del>（二游抽卡沉了）</del><br><del>这边本来写了很多东西的，但文笔实在太差了，自己都看不下去，删了，留给未来的我解决吧</del></p>
+
+    </div>
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 janblank499
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;janblank499
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+            </div>
+            </transition>
+            <div id="showimg">
+                <img id="showimg-content">
+            </div>
+        </div>
+        <script src="/js/functions.js"></script>
+<script src="/js/particlex.js"></script>
+
+
+
+<script
+    src="https://giscus.app/client.js"
+    data-repo="janblank499/janblank499.github.io"
+    data-repo-id="R_kgDOHtGT4g"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHtGT4s4CT3oI"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
+
+
+    </body>
+</html>
